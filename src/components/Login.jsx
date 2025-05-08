@@ -36,11 +36,11 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if(formData.email == 'mitali@gmail.com')return;
-        if(formData.password !='mit123') return;
-        if(!formData.reCaptchaVerified) return;
+        if (formData.email == 'mitali@gmail.com') return;
+        if (formData.password != 'mit123') return;
+        if (!formData.reCaptchaVerified) return;
 
-    
+        navigate('/dashboard')
     }
 
     return (
